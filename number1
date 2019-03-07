@@ -1,0 +1,40 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+	int priceOfBoxTicket, priceOfSidelineTicket, priceOfPremiumTicket, priceOfGeneralAdmission;
+
+	int numberOfBoxTicketSold, numberOfSidelineTicketSold, numberOfPremiumTicketSold, numberOfGeneralAdmissionSold;
+
+	int amountOfBoxTicketSold, amountOfSidelineTicketSold, amountOfPremiumTicketSold, amountOfGeneralAdmissionTicketSold;
+
+	int numberOfTicketSold, totalSaleAmount;
+	
+	priceOfBoxTicket = 250;
+	priceOfSidelineTicket = 100;
+	priceOfPremiumTicket = 50;
+	priceOfGeneralAdmission = 25;
+
+	numberOfBoxTicketSold = 5750;
+	numberOfSidelineTicketSold = 28000;
+	numberOfPremiumTicketSold = 35750;
+	numberOfGeneralAdmissionSold = 18750;
+
+	amountOfBoxTicketSold = priceOfBoxTicket * numberOfBoxTicketSold;
+	amountOfSidelineTicketSold = priceOfSidelineTicket * numberOfSidelineTicketSold;
+	amountOfPremiumTicketSold = priceOfPremiumTicket * numberOfPremiumTicketSold;
+	amountOfGeneralAdmissionTicketSold = priceOfGeneralAdmission * numberOfGeneralAdmissionSold;
+
+	numberOfTicketSold = numberOfBoxTicketSold + numberOfSidelineTicketSold + numberOfPremiumTicketSold + numberOfGeneralAdmissionSold;
+
+	totalSaleAmount = amountOfBoxTicketSold + amountOfSidelineTicketSold + amountOfPremiumTicketSold + amountOfGeneralAdmissionTicketSold;
+
+	cout << "The total number of tickets sold is " << numberOfTicketSold << endl;
+	cout << "The total sale amount is " << totalSaleAmount << endl;
+
+	cin.get();
+	return 0;
+}
